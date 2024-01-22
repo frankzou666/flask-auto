@@ -1,0 +1,444 @@
+2024-01-22 22:18:25,143 - flask_auto - INFO - ok
+2024-01-22 22:20:47,180 - flask_auto - INFO - ok
+2024-01-22 22:21:03,803 - flask_auto - INFO - ok
+2024-01-22 22:22:00,223 - flask_auto - INFO - ok
+2024-01-22 22:22:40,683 - flask_auto - INFO - ok
+2024-01-22 22:22:44,687 - flask_auto - INFO - ok
+2024-01-22 22:25:09,655 - flask_auto - ERROR - Exception on /api/user/users [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 16, in getUsers
+    return jsonify({"user":users}),200
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type User is not JSON serializable
+2024-01-22 22:25:16,178 - flask_auto - ERROR - Exception on /api/user/users [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 16, in getUsers
+    return jsonify({"user":users}),200
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type User is not JSON serializable
+2024-01-22 22:33:10,649 - flask_auto - ERROR - Exception on /api/user/users [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in createUsers
+    user=User(username=data.get("username"),password=data.get("password"))
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 14, in __init__
+    self.password=bcrypt.hashpw(password).decode()
+TypeError: hashpw() missing 1 required positional argument: 'salt'
+2024-01-22 22:34:40,173 - flask_auto - ERROR - Exception on /api/user/users [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in createUsers
+    user=User(username=data.get("username"),password=data.get("password"))
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 14, in __init__
+    self.password=bcrypt.hashpw(password,bcrypt.gensalt()).decode()
+TypeError: argument 'password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:34:57,735 - flask_auto - ERROR - Exception on /api/user/users [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in createUsers
+    user=User(username=data.get("username"),password=data.get("password"))
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 14, in __init__
+    self.password=bcrypt.hashpw(password,bcrypt.gensalt())
+TypeError: argument 'password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:36:17,154 - flask_auto - ERROR - Exception on /api/user/users [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in createUsers
+    user=User(username=data.get("username"),password=data.get("password"))
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 14, in __init__
+    self.password=bcrypt.hashpw(password, bcrypt.gensalt())
+TypeError: argument 'password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:36:45,557 - flask_auto - ERROR - Exception on /api/user/users [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in createUsers
+    user=User(username=data.get("username"),password=data.get("password"))
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 14, in __init__
+    self.password=bcrypt.hashpw(password.to_bytes(), bcrypt.gensalt())
+AttributeError: 'str' object has no attribute 'to_bytes'
+2024-01-22 22:37:50,372 - flask_auto - INFO - ok
+2024-01-22 22:44:59,236 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 25, in login
+    user = User.query.filter_by(User.username==data.get("username")).first()
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+2024-01-22 22:46:03,849 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+AttributeError: 'NoneType' object has no attribute 'check_user_password'
+2024-01-22 22:46:25,572 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 20, in check_user_password
+    return bcrypt.checkpw(password.encode(),hashed_password=self.password)
+TypeError: argument 'hashed_password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:47:44,878 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 21, in check_user_password
+    return bcrypt.checkpw(password.encode(),hashed_password=self.password)
+TypeError: argument 'hashed_password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:48:32,707 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 21, in check_user_password
+    return bcrypt.checkpw(password,hashed_password=self.password)
+TypeError: argument 'password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:49:38,578 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 21, in check_user_password
+    return bcrypt.checkpw(password,hashed_password=self.password)
+TypeError: argument 'password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:50:31,032 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 21, in check_user_password
+    return bcrypt.checkpw(password.encode('utf-8') ,hashed_password=self.password)
+TypeError: argument 'hashed_password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 22:50:32,269 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 28, in login
+    if user.check_user_password(data.get("password")):
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 21, in check_user_password
+    return bcrypt.checkpw(password.encode('utf-8') ,hashed_password=self.password)
+TypeError: argument 'hashed_password': 'str' object cannot be converted to 'PyBytes'
+2024-01-22 23:00:57,431 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 29, in login
+    return jsonify({"msg": "loginSuccess","auth_toke":user.encode_user_token()}), 200
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 32, in encode_user_token
+    token =encode(payload=payload,algorithm="HS256")
+TypeError: PyJWT.encode() missing 1 required positional argument: 'key'
+2024-01-22 23:10:07,119 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(key=current_app.config.get("SECRET_KEY"),algorithm="HS256")
+TypeError: PyJWT.decode() missing 1 required positional argument: 'jwt'
+2024-01-22 23:10:46,321 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"),algorithm="HS256")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 147, in decode_complete
+    raise DecodeError(
+jwt.exceptions.DecodeError: It is required that you pass in a value for the "algorithms" argument when calling decode().
+2024-01-22 23:11:12,305 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 147, in decode_complete
+    raise DecodeError(
+jwt.exceptions.DecodeError: It is required that you pass in a value for the "algorithms" argument when calling decode().
+2024-01-22 23:12:02,461 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"),algorithms=("HS256"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 242, in _validate_claims
+    self._validate_iat(payload, now, leeway)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 278, in _validate_iat
+    raise ImmatureSignatureError("The token is not yet valid (iat)")
+jwt.exceptions.ImmatureSignatureError: The token is not yet valid (iat)
+2024-01-22 23:13:02,704 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 147, in decode_complete
+    raise DecodeError(
+jwt.exceptions.DecodeError: It is required that you pass in a value for the "algorithms" argument when calling decode().
+2024-01-22 23:13:38,346 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"),algorithms=("HS256"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 242, in _validate_claims
+    self._validate_iat(payload, now, leeway)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 278, in _validate_iat
+    raise ImmatureSignatureError("The token is not yet valid (iat)")
+jwt.exceptions.ImmatureSignatureError: The token is not yet valid (iat)
+2024-01-22 23:17:27,367 - flask_auto - ERROR - Exception on /api/user/login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/bp/user.py", line 30, in login
+    print(User.decode_user_token(auth_token))
+  File "/Users/oliver/Documents/frank/dev/python/flask-auto/flask_auto/models/user.py", line 38, in decode_user_token
+    payload =decode(jwt=jwt, key=current_app.config.get("SECRET_KEY"),algorithms=("HS256"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 242, in _validate_claims
+    self._validate_iat(payload, now, leeway)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jwt/api_jwt.py", line 278, in _validate_iat
+    raise ImmatureSignatureError("The token is not yet valid (iat)")
+jwt.exceptions.ImmatureSignatureError: The token is not yet valid (iat)
+2024-01-22 23:20:33,858 - flask_auto - INFO - ok
