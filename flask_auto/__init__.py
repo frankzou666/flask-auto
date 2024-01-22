@@ -35,8 +35,5 @@ def create_app():
     registerLogging(app=app)
     db.init_app(app=app)
     registerBluepoint(app)
-   #app.add_url_rule("/index", "index", index)
-
-
 
     return app
