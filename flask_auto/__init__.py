@@ -1,10 +1,11 @@
 # _*_coding:utf-8 _*_
 
 
-from flask import  Flask
+from flask import  Flask,redirect
 from flask_sqlalchemy import SQLAlchemy
 import  logging
 import os
+from flask_cors import CORS
 
 from config import Config
 
@@ -23,10 +24,15 @@ def registerLogging(app):
 def registerBluepoint(app):
     from flask_auto.bp.user import user_blueprint
     from flask_auto.bp.index import index_blueprint
+    from flask_auto.bp.server import server_blueprint
     app.register_blueprint(user_blueprint)
     app.register_blueprint(index_blueprint)
+    app.register_blueprint(server_blueprint)
     # app.register_blueprint(admin_blueprint)
 
+
+def redirectTo404(e):
+    return redirect("/"),301
 
 
 def create_app():
@@ -34,6 +40,9 @@ def create_app():
     app.config.from_object(Config)
     registerLogging(app=app)
     db.init_app(app=app)
+    CORS().init_app(app=app)
     registerBluepoint(app)
+    app.config['users']=[]
+    app.register_error_handler(404, redirectTo404)
 
     return app

@@ -17,7 +17,7 @@ class User(db.Model):
         self.password=bcrypt.hashpw(password.encode(), bcrypt.gensalt())
 
     def to_json(self):
-        return  {"username":self.username,"password":self.password}
+        return  {"username":self.username,"user_id":self.id}
 
     def check_user_password(self,password):
         return bcrypt.checkpw(password.encode('utf-8') ,hashed_password=self.password.encode("utf-8"))
